@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Welcome, Admin</h2>
+  <button onclick="logout()">Logout</button>
+
+  <h3>Add New Notice</h3>
+  <form id="noticeForm">
+    <input type="text" id="title" placeholder="Notice Title" required />
+    <input type="date" id="date" required />
+    <textarea id="description" placeholder="Notice Description" required></textarea>
+    <button type="submit">Add Notice</button>
+  </form>
+
+  <h3>All Notices</h3>
+  <div id="noticeList"></div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
